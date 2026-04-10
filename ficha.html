@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#8C1C13",
+                    "on-surface-variant": "#65655a",
+                    "on-background": "#38392f",
+                    "on-secondary-fixed": "#004558",
+                    "secondary-fixed-dim": "#a7dcf3",
+                    "on-tertiary-container": "#5a624a",
+                    "surface-tint": "#8C1C13",
+                    "background": "#fffcf6",
+                    "secondary-fixed": "#b9eaff",
+                    "surface-bright": "#fffcf6",
+                    "tertiary-fixed-dim": "#e6efd0",
+                    "tertiary-dim": "#545b44",
+                    "inverse-on-surface": "#9e9d98",
+                    "on-error": "#ffffff",
+                    "primary-fixed": "#ffac9f",
+                    "surface": "#fffcf6",
+                    "surface-container": "#f6f4ea",
+                    "on-tertiary-fixed-variant": "#656d54",
+                    "on-tertiary-fixed": "#485039",
+                    "inverse-surface": "#0e0e0b",
+                    "inverse-primary": "#fd6e5c",
+                    "outline-variant": "#babaad",
+                    "on-secondary-fixed-variant": "#2b6275",
+                    "primary-fixed-dim": "#ff9788",
+                    "secondary": "#356b7f",
+                    "error": "#b3374e",
+                    "on-secondary-container": "#1f586b",
+                    "on-secondary": "#ffffff",
+                    "outline": "#818176",
+                    "on-primary": "#ffffff",
+                    "surface-variant": "#eae9db",
+                    "surface-container-high": "#f0eee3",
+                    "error-dim": "#770326",
+                    "surface-container-highest": "#eae9db",
+                    "on-surface": "#38392f",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#b9eaff",
+                    "surface-dim": "#e4e3d3",
+                    "primary-dim": "#a32d21",
+                    "tertiary-fixed": "#f5fdde",
+                    "on-primary-container": "#7b0e08",
+                    "error-container": "#f76a80",
+                    "surface-container-low": "#fcf9f1",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#68001f",
+                    "secondary-dim": "#275f72",
+                    "tertiary": "#60674f",
+                    "on-primary-fixed": "#580001",
+                    "on-primary-fixed-variant": "#881911",
+                    "primary-container": "#ffac9f",
+                    "tertiary-container": "#f5fdde"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0rem",
+                    "lg": "0rem",
+                    "xl": "0rem",
+                    "full": "0.125rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-italic { font-family: 'Newsreader'; font-style: italic; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md shadow-[0_20px_40px_rgba(56,57,47,0.04)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-zinc-900 dark:text-zinc-50 tracking-tight">
+                Marta Dávila
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-zinc-500 dark:text-zinc-400 font-sans font-medium uppercase tracking-wider text-xs hover:text-primary transition-colors duration-300" href="#">About</a>
+<a class="text-primary dark:text-primary relative after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-primary after:rounded-full uppercase tracking-wider text-xs font-bold" href="#">Productions</a>
+<a class="text-zinc-500 dark:text-zinc-400 font-sans font-medium uppercase tracking-wider text-xs hover:text-primary transition-colors duration-300" href="#">News</a>
+<a class="text-zinc-500 dark:text-zinc-400 font-sans font-medium uppercase tracking-wider text-xs hover:text-primary transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="font-sans text-xs uppercase tracking-[0.05em] text-on-surface-variant cursor-pointer hover:text-primary transition-colors">
+                ES/CA
+            </div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Side: Large Production Poster -->
+<div class="lg:col-span-7 relative group">
+<div class="aspect-[3/4] overflow-hidden shadow-lg bg-surface-container-low transition-transform duration-500 group-hover:scale-[1.01]">
+<img alt="Production Poster" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw5CJ5A_DO5G0oyyh07R6NYJX_MO0OeBK5-oAMuJ_5vMnDukU5D9YMEDQFupbQGNWy2SBQuQuScTFwqbpaRDDSRGIEopDmnS4A9QbWBQKscNx85V1FqcwfsWCUvnQxvieBkwzhnvB6iwFSoOXvFl3P1AgWAYJ3uhamnRrP5wrUFSX8vUffm_o_e6ANlkDjYrAs_2QnedwpVDiaRXrurAx38Q1FTgu5flBw_egHp0HDc0W10WXgQTt-7DkzkxhvVVqKMstR-4AkiKJ9"/>
+</div>
+</div>
+<!-- Right Side: Content & Details -->
+<div class="lg:col-span-5 flex flex-col space-y-8 lg:sticky lg:top-36">
+<div>
+<span class="inline-flex items-center px-4 py-1 bg-primary text-on-primary text-[10px] font-bold uppercase tracking-widest mb-4">
+                        Theater
+                    </span>
+<h1 class="text-5xl md:text-7xl font-headline font-semibold text-on-background leading-tight mb-4 -ml-1">
+                        The Silent <br/><span class="serif-italic">Overture</span>
+</h1>
+<p class="text-lg text-on-surface-variant font-light italic leading-relaxed">
+                        A contemporary exploration of the spaces between notes.
+                    </p>
+</div>
+<!-- Updated Header Card: Simplified without Buy Tickets -->
+<div class="bg-surface-container-lowest p-8 shadow-[0_20px_40px_rgba(56,57,47,0.04)] border border-outline-variant/15">
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="calendar_today">calendar_today</span>
+<div>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Current Season</p>
+<p class="text-lg font-medium">Oct 12 — Dec 15, 2024</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<div>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Next Showing</p>
+<p class="text-lg font-medium">Gran Teatre del Liceu, Barcelona</p>
+</div>
+</div>
+<div class="pt-4">
+<button class="block w-full py-4 text-center border border-outline-variant/30 text-on-background font-headline italic text-lg hover:bg-surface-container-low transition-colors">
+                                Download Project Dossier
+                            </button>
+</div>
+</div>
+</div>
+<!-- Social Cast Icons -->
+<div class="flex items-center space-x-6 pt-4">
+<span class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">Follow Cast</span>
+<div class="flex space-x-4">
+<a class="w-8 h-8 flex items-center justify-center rounded-full bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="person">person</span>
+</a>
+<a class="w-8 h-8 flex items-center justify-center rounded-full bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="group">group</span>
+</a>
+<a class="w-8 h-8 flex items-center justify-center rounded-full bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical & Synopsis Section -->
+<section class="mt-32 border-t border-outline-variant/10 pt-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-4">
+<h2 class="text-3xl font-headline font-medium mb-6">Ficha Técnica</h2>
+<ul class="space-y-6">
+<li>
+<p class="text-xs uppercase tracking-widest text-primary font-bold mb-1">Director</p>
+<p class="text-xl font-headline italic">Elena Santoventura</p>
+</li>
+<li>
+<p class="text-xs uppercase tracking-widest text-primary font-bold mb-1">Set Design</p>
+<p class="text-xl font-headline italic">Marcello Rossi</p>
+</li>
+<li>
+<p class="text-xs uppercase tracking-widest text-primary font-bold mb-1">Lighting</p>
+<p class="text-xl font-headline italic">Clara Beam</p>
+</li>
+<li>
+<p class="text-xs uppercase tracking-widest text-primary font-bold mb-1">Original Score</p>
+<p class="text-xl font-headline italic">The Ambient Ensemble</p>
+</li>
+</ul>
+</div>
+<div class="lg:col-span-8">
+<h3 class="text-xs uppercase tracking-widest text-on-surface-variant font-bold mb-8">Synopsis &amp; Artistic Vision</h3>
+<div class="prose prose-zinc max-w-none text-on-surface-variant text-lg leading-relaxed space-y-6">
+<p>
+                            "The Silent Overture" reimagines the traditional narrative structure of theater by focusing on the moments of stillness. In a world characterized by constant noise, this production asks: what remains when the dialogue stops?
+                        </p>
+<p>
+                            Using a unique blend of minimalist set design and highly tactile lighting, the performance creates a sensory environment that envelops the audience. Every breath, every subtle movement of the performers is amplified through a bespoke acoustic arrangement.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- New: Próximas Funciones Section -->
+<section class="mt-24 pt-16 border-t border-outline-variant/10">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<span class="text-xs uppercase tracking-[0.2em] text-primary font-bold mb-2 block">Tour Schedule</span>
+<h2 class="text-4xl md:text-5xl font-headline font-medium">Próximas Funciones</h2>
+</div>
+<div class="text-on-surface-variant text-sm font-light italic">
+            Check availability for upcoming European dates.
+        </div>
+</div>
+<div class="grid grid-cols-1 gap-px bg-outline-variant/20 border border-outline-variant/20 overflow-hidden">
+<!-- Date Row 1 -->
+<div class="bg-surface hover:bg-surface-container-low transition-colors group">
+<div class="flex flex-col md:flex-row items-center p-8 gap-8">
+<div class="flex flex-col items-center justify-center min-w-[100px]">
+<span class="text-3xl font-headline font-bold">12</span>
+<span class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Octubre</span>
+</div>
+<div class="flex-grow text-center md:text-left">
+<h4 class="text-xl font-medium mb-1">Gran Teatre del Liceu</h4>
+<p class="text-on-surface-variant text-sm uppercase tracking-wider">Barcelona, Spain</p>
+</div>
+<div class="w-full md:w-auto">
+<a class="inline-block w-full md:w-auto px-10 py-4 bg-primary text-on-primary text-xs font-bold uppercase tracking-widest transition-all hover:bg-primary-dim" href="#">
+                        Comprar Entradas
+                    </a>
+</div>
+</div>
+</div>
+<!-- Date Row 2 -->
+<div class="bg-surface hover:bg-surface-container-low transition-colors group">
+<div class="flex flex-col md:flex-row items-center p-8 gap-8">
+<div class="flex flex-col items-center justify-center min-w-[100px]">
+<span class="text-3xl font-headline font-bold">28</span>
+<span class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Octubre</span>
+</div>
+<div class="flex-grow text-center md:text-left">
+<h4 class="text-xl font-medium mb-1">Teatro Real</h4>
+<p class="text-on-surface-variant text-sm uppercase tracking-wider">Madrid, Spain</p>
+</div>
+<div class="w-full md:w-auto">
+<a class="inline-block w-full md:w-auto px-10 py-4 bg-primary text-on-primary text-xs font-bold uppercase tracking-widest transition-all hover:bg-primary-dim" href="#">
+                        Comprar Entradas
+                    </a>
+</div>
+</div>
+</div>
+<!-- Date Row 3 -->
+<div class="bg-surface hover:bg-surface-container-low transition-colors group">
+<div class="flex flex-col md:flex-row items-center p-8 gap-8">
+<div class="flex flex-col items-center justify-center min-w-[100px]">
+<span class="text-3xl font-headline font-bold">15</span>
+<span class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Noviembre</span>
+</div>
+<div class="flex-grow text-center md:text-left">
+<h4 class="text-xl font-medium mb-1">Théâtre du Châtelet</h4>
+<p class="text-on-surface-variant text-sm uppercase tracking-wider">Paris, France</p>
+</div>
+<div class="w-full md:w-auto">
+<a class="inline-block w-full md:w-auto px-10 py-4 bg-primary text-on-primary text-xs font-bold uppercase tracking-widest transition-all hover:bg-primary-dim" href="#">
+                        Comprar Entradas
+                    </a>
+</div>
+</div>
+</div>
+<!-- Date Row 4 -->
+<div class="bg-surface hover:bg-surface-container-low transition-colors group">
+<div class="flex flex-col md:flex-row items-center p-8 gap-8">
+<div class="flex flex-col items-center justify-center min-w-[100px]">
+<span class="text-3xl font-headline font-bold">04</span>
+<span class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Diciembre</span>
+</div>
+<div class="flex-grow text-center md:text-left">
+<h4 class="text-xl font-medium mb-1">Volksbühne am Rosa-Luxemburg-Platz</h4>
+<p class="text-on-surface-variant text-sm uppercase tracking-wider">Berlin, Germany</p>
+</div>
+<div class="w-full md:w-auto">
+<a class="inline-block w-full md:w-auto px-10 py-4 bg-primary text-on-primary text-xs font-bold uppercase tracking-widest transition-all hover:bg-primary-dim" href="#">
+                        Comprar Entradas
+                    </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Section -->
+<section class="mt-32 pt-16 border-t border-outline-variant/10">
+<div class="mb-12">
+<span class="text-xs uppercase tracking-[0.2em] text-primary font-bold mb-2 block text-center lg:text-left">Production Stills</span>
+<h2 class="text-4xl md:text-5xl font-headline font-medium text-center lg:text-left">Escenas de la Obra</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-high group">
+<img alt="Stage Scene 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH6FQ4pHqv9GwvfDhqE6QCMj8j94shb302Fa_BubNZLthaHFhU_Yt2EYk1ci0ASrykn8ren5JiFgJGoSbv07Zel2YbvCKUX4Q-_QS4Ej6XM0-sPZTSU-KRgPv1tPN-94JOaA6IzEGa_ILOg9F2x5qX97fbyomQWkK5ACqRhkD_Yum0gr8gcpGxWDL7zagh-IfqrIpbTmXx6CQsouFh9nxg3sA4vjThDsZNCAynJD5b8xiASarkoUczSZqZfZ1NIaHTsfDZAFwRcnmX"/>
+</div>
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-high group">
+<img alt="Stage Scene 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8m-z40kr1rCLokgC6Fpr-RKI-cFniePiJx9-NRYwnOUtyObrNHXPajH1SQsMn6AtPcbsNw7e6dSWADMzZ5SEDCPtXkSdRzWo0IUVD7WK82OEXolLP4jLZH4DYhH7MO762vgksbnee-yD4wh0KbxHusTrAZsfi5FV2ShOgqP8kuE4dlQHcrgGwp60Gnmgv0zpJ3QyqOx7oz6NalOeeTLr5Hl7YdJf1Y8nZyN_qLTdXYTQ8e3tiaIKxfuWSRxJ-67LU9h62TW8d2IxO"/>
+</div>
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-high group">
+<img alt="Stage Scene 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaS_0qbm1yGB7pObNX6D1mOUidEbt9NSVm2KV6eeX2zQkivPcGtWCrp4vwH7qkGCHt6fTAFUUvZ-1H862GBY7hD8g1JVvjmXFNtkrZnpBW8ygom_O-H-6i7yfhsTuhowjH45iF2Rm_92VhYs75gzThtSvZhSfSFQZ-yw26Gw84Cbw5EJOjnxzLq-zFlz_3zPU4d9oeogMebh7aRUjSw4fzzUG51Q0oGlVd40ARh5cC10sIPb9rtAO1EOfjPYMH8-ppg50DXEr7aNoN"/>
+</div>
+</div>
+</section><section class="mt-32 bg-surface-container-low -mx-6 md:-mx-12 px-6 md:px-12 py-24">
+<div class="max-w-5xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-headline mb-4">Official Trailer</h2>
+<p class="text-on-surface-variant uppercase tracking-widest text-xs font-bold">Experience the atmosphere</p>
+</div>
+<div class="aspect-video relative overflow-hidden shadow-2xl bg-zinc-900 group">
+<img alt="Video Placeholder" class="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyR8j1WFqeS7hrLxgkk0fFfLMMhlbPghyUvl3sunjnvC7ffgMWwIIiM2g1UJRhivS2YHNr9oztdOjpOomRfEn8oQVLXCllNWmIk835b4BhkyzCtaTSTR0kGSYRjSoDnfdLHExScF8_dAW4F5xb6e1nGzIbInFghCTiFXV2wNTLT-dkOOjYJspgZ0YBNClHk-LjfPF0pkoGHKmDM6kOTaECedz1ez4SX5ulwQU8K-sQ0i9xXmUC8wmvJWufvrdeGSuVSFpt1Ifp9n7E"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<button class="w-20 h-20 flex items-center justify-center bg-primary text-white backdrop-blur-sm transition-transform hover:scale-110">
+<span class="material-symbols-outlined text-4xl" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="w-full py-12 px-8 bg-zinc-100 dark:bg-zinc-950">
+<div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 max-w-screen-2xl mx-auto">
+<div class="font-sans text-xs uppercase tracking-[0.05em] text-zinc-500 dark:text-zinc-400">
+                © 2025 Marta Dávila · Promotora de Artes Escénicas · Todos los derechos reservados
+            </div>
+<div class="flex space-x-8">
+<a class="font-sans text-xs uppercase tracking-[0.05em] text-zinc-500 dark:text-zinc-400 hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Contact</a>
+<a class="font-sans text-xs uppercase tracking-[0.05em] text-zinc-500 dark:text-zinc-400 hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-sans text-xs uppercase tracking-[0.05em] text-zinc-500 dark:text-zinc-400 hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-sans text-xs uppercase tracking-[0.05em] text-zinc-500 dark:text-zinc-400 hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Legal</a>
+</div>
+</div>
+</footer>
+</body></html>

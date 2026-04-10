@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Marta Dávila — Promotora de Artes Escénicas</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#b4392c",
+                        "on-surface-variant": "#65655a",
+                        "on-background": "#38392f",
+                        "on-secondary-fixed": "#004558",
+                        "secondary-fixed-dim": "#a7dcf3",
+                        "on-tertiary-container": "#5a624a",
+                        "surface-tint": "#b4392c",
+                        "background": "#fffcf6",
+                        "secondary-fixed": "#b9eaff",
+                        "surface-bright": "#fffcf6",
+                        "tertiary-fixed-dim": "#e6efd0",
+                        "tertiary-dim": "#545b44",
+                        "inverse-on-surface": "#9e9d98",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#ffac9f",
+                        "surface": "#fffcf6",
+                        "surface-container": "#f6f4ea",
+                        "on-tertiary-fixed-variant": "#656d54",
+                        "on-tertiary-fixed": "#485039",
+                        "inverse-surface": "#0e0e0b",
+                        "inverse-primary": "#fd6e5c",
+                        "outline-variant": "#babaad",
+                        "on-secondary-fixed-variant": "#2b6275",
+                        "primary-fixed-dim": "#ff9788",
+                        "secondary": "#356b7f",
+                        "error": "#b3374e",
+                        "on-secondary-container": "#1f586b",
+                        "on-secondary": "#ffffff",
+                        "outline": "#818176",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#eae9db",
+                        "surface-container-high": "#f0eee3",
+                        "error-dim": "#770326",
+                        "surface-container-highest": "#eae9db",
+                        "on-surface": "#38392f",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#b9eaff",
+                        "surface-dim": "#e4e3d3",
+                        "primary-dim": "#a32d21",
+                        "tertiary-fixed": "#f5fdde",
+                        "on-primary-container": "#7b0e08",
+                        "error-container": "#f76a80",
+                        "surface-container-low": "#fcf9f1",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#68001f",
+                        "secondary-dim": "#275f72",
+                        "tertiary": "#60674f",
+                        "on-primary-fixed": "#580001",
+                        "on-primary-fixed-variant": "#881911",
+                        "primary-container": "#ffac9f",
+                        "tertiary-container": "#f5fdde"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; background-color: #fffcf6; color: #38392f; }
+        .font-serif { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md shadow-[0_20px_40px_rgba(56,57,47,0.04)]">
+<nav class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-zinc-900 dark:text-zinc-50 tracking-tight">Marta Dávila</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-zinc-500 dark:text-zinc-400 font-sans font-medium uppercase tracking-wider text-xs hover:text-red-800 transition-colors duration-300" href="#">About</a>
+<a class="text-red-800 dark:text-red-500 relative after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-red-800 after:rounded-full font-sans font-medium uppercase tracking-wider text-xs" href="#">Productions</a>
+<a class="text-zinc-500 dark:text-zinc-400 font-sans font-medium uppercase tracking-wider text-xs hover:text-red-800 transition-colors duration-300" href="#">News</a>
+<a class="text-zinc-500 dark:text-zinc-400 font-sans font-medium uppercase tracking-wider text-xs hover:text-red-800 transition-colors duration-300" href="#contact">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center font-sans text-xs uppercase tracking-[0.05em] text-on-surface-variant">
+<span class="text-on-surface font-bold">ES</span>
+<span class="mx-1">/</span>
+<span class="hover:text-primary transition-colors cursor-pointer">CA</span>
+</div>
+<button class="md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 md:pt-48 md:pb-40 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+<div class="md:col-span-7 z-10">
+<h1 class="text-6xl md:text-8xl lg:text-9xl font-serif leading-[0.9] tracking-tight mb-8">
+                        Donde el <span class="italic text-primary">Arte</span><br/>cobra vida
+                    </h1>
+<p class="text-lg md:text-xl font-body max-w-lg mb-10 text-on-surface-variant leading-relaxed">
+                        Curaduría de experiencias escénicas que desafían la gravedad y despiertan el alma. Una nueva mirada al teatro y la música.
+                    </p>
+<a class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-primary to-primary-dim text-on-primary rounded-lg font-body font-bold text-lg hover:scale-105 transition-transform duration-300" href="#productions">
+                        Ver producciones
+                        <span class="material-symbols-outlined ml-2">arrow_forward</span>
+</a>
+</div>
+<div class="md:col-span-5 relative mt-12 md:mt-0">
+<div class="aspect-[3/4] rounded-xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700">
+<img class="w-full h-full object-cover" data-alt="dramatic stage lighting with a single performer in silhouette against a hazy spotlight background in an elegant theater" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEd7bUPEfAEkqZvr1PjlYHZI4X1uLKWEC_Xq00DyWnuupHFPGT6oiY6qRKMif_JrtSnZoOL4NYqyiIkfbU5tmz9bz7F8equKYC8oUE1Kq4ZBxHpxXPSPFUABV7PavF8rhFJY9TSu5wJtdkb5ntzLotNz4rZ3SBVZ221NS96BoLOZRbT5pZrrsquUUnwil3r1pBE2cMukKKyaRJK-OE7y7z0sk9oL4X7bjjWaV59Qu1teDRlUTmxu8r5jjQVUgUIMinvkwy3ZV_F-rz"/>
+</div>
+<div class="absolute -bottom-6 -left-6 md:-left-12 w-48 h-48 rounded-xl overflow-hidden shadow-2xl border-8 border-background z-20 hidden md:block">
+<img class="w-full h-full object-cover" data-alt="close up of expressive dancers hands reaching upwards in soft warm atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdAs6el8bVDb5T00T421RCLan4gGoK1Jzbr6d7lxCdvmwJaMEXwawAtzCjzc599HilJPSCNAFdCluHt_ScGiWXHsHmmt7qwJlDN0uUTrpnApv8Kz3GkjIfRWq5OPsHz5bcisT23Ih3ZKF_Om07cTV00Eu8pZ_LAesZyZBSPXbdwscSXEAf9nd3xUKaWUg57u0ekvESv6Un-declYel5AA9N7E48xEtofRB8Fghm1nd2ogTEU-5drn-khr5GAROFhu1NJkYUyT4XXhB"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Blocks (Discipline Palette) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex flex-col md:flex-row gap-8">
+<!-- Theater Block -->
+<div class="group relative flex-1 aspect-[4/5] md:aspect-auto md:h-[600px] overflow-hidden rounded-xl bg-primary shadow-xl">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" data-alt="classic red velvet theater seats and an ornate golden balcony in a traditional European opera house" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA8l6Qt3DBWlo_zVZ78VwVyFgHfOnaRk86aQvmlF36EvlWyqVuSnJT5-9QevvQRysVlQCanVtGorvzIQ7tTeOB84VokLbS02RLfdVeoJuQpZGMZNRYEHN8SPyGTg_4DBfK4ZoxRx1S6iwUJsdv2Hbv3DNV84ZX3ZjrCk0nrP1eIBHH4OfQ5hy7BqbZq2x31yM4_zkt0KeSpPA-jiqQSJ7bcjEY3YdX1_U0qiC7l69m1_8bg2elNwLr-Gj9yM6-YxA3EkB6ibWwz_LP"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent"></div>
+<div class="absolute bottom-10 left-10 text-on-primary">
+<span class="font-label text-xs uppercase tracking-widest opacity-80 mb-2 block">Dramaturgia</span>
+<h2 class="text-5xl font-serif italic">Teatro</h2>
+</div>
+</div>
+<!-- Music Block -->
+<div class="group relative flex-1 aspect-[4/5] md:aspect-auto md:h-[600px] overflow-hidden rounded-xl bg-secondary shadow-xl md:mt-16">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" data-alt="abstract view of a grand piano strings or orchestral instruments in a dark nocturnal blue light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5M2SBMNKKs221g8pWDagQ1C3XZMH4nVqlSsbxSe7W1fyS4c6wN8ganOhGEfiv8H2hWFJey64lEwQDmiEKxucnYAUp9iADEv_-Xd5xaZLZqshIY0DqdEEwXxacySmjvVbZpf4El83BOOS2g90uNGk6_VUh3xky_ZIjMTmiOgg4rfK3_6pr6nLzEH3QIENJWBVX8r8tAvUTdjp4ok7LoizLncuXeaCjayaSynZmfMu8zJUL1-P1lhGtG9GV0jjJlaHLOtAQRKp1zq9c"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent"></div>
+<div class="absolute bottom-10 left-10 text-on-secondary">
+<span class="font-label text-xs uppercase tracking-widest opacity-80 mb-2 block">Ritmo</span>
+<h2 class="text-5xl font-serif italic">Música</h2>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Productions (Bento-style Grid) -->
+<section class="py-24 bg-surface" id="productions">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="font-label text-xs uppercase tracking-[0.2em] text-primary font-bold mb-4 block">Selección de Temporada</span>
+<h2 class="text-5xl font-serif">Producciones Destacadas</h2>
+</div>
+<a class="text-on-surface font-serif italic text-xl border-b border-outline-variant pb-1 hover:text-primary transition-colors" href="#">Ver catálogo completo</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Featured Card 1 -->
+<div class="md:col-span-8 group cursor-pointer">
+<div class="relative aspect-[16/9] overflow-hidden rounded-xl bg-surface-container-highest mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="dramatic theatrical scene with two actors in period costume highlighted by a single bright spotlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApymMs3r0KnhdvbgcZNM87LkTljrw81QF4tHc6fhdy_fhPRFpo1e_wAFWm_ds1jqBFfBCFaIPxOuW99R0eKnNokvVAFPHsVhwNHOzVXrUJyytnNcKmLZ1K5OjCVudt1IyxFd4n6B2ylDT4CU0KuPUBguymF2Y4byGTKoUg1Ip23XDAo7lPi940W1bz9zvwV9gN7Z8Q2DINqg19cviMmV6pVE3OH4W8ak1Zawaay8K_KIx5ES768v2NJpRw2SQvlKwnnjBGHKGw43LD"/>
+<div class="absolute top-6 left-6">
+<span class="px-4 py-1.5 bg-primary-container text-on-primary-container rounded-full text-xs font-bold uppercase tracking-wider">Theater</span>
+</div>
+</div>
+<h3 class="text-3xl font-serif mb-2">Las Sombras de la Ilusión</h3>
+<p class="text-on-surface-variant font-body">Dirigida por Elena Valdés • Gran Teatre del Liceu</p>
+</div>
+<!-- Featured Card 2 -->
+<div class="md:col-span-4 group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-highest mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="jazz quartet performing on a smoky stage with blue and purple ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4kzrV-956_o1wCI5GkZXnReyqhgyHmlusgxCR-Dp3To155fNjqLQTFJD4o6BrRnwsFNQKBjiu03R42yT1dQ_y0StejB7vLEPS_h0onrSwlJRMfU6f-TcqxJuipPAwZpJrgICoR4kvL8ZgpdZAbu8sz1LhFDAcyJuaB5ekBSUq-lg9IkW4pIZg8JFdyH0VfrM28bibj0wGkCMLxXLOO-5AOiPfRopTwk4mcs7gEiJoFf8Kem8mX8o68NywQN7bVk4rk4x1uKq7GYsx"/>
+<div class="absolute top-6 left-6">
+<span class="px-4 py-1.5 bg-secondary-container text-on-secondary-container rounded-full text-xs font-bold uppercase tracking-wider">Music</span>
+</div>
+</div>
+<h3 class="text-2xl font-serif mb-2">Nocturno en Azul</h3>
+<p class="text-on-surface-variant font-body">Ensemble de Jazz Moderno</p>
+</div>
+<!-- Featured Card 3 - Replaces Dance Card -->
+<div class="md:col-span-4 group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-highest mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="close up of a cellist hands playing in soft warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2N9qIeFAOPb0KmWYN7AYjYRwXCAsk5H5PAmClhdiUg0oQVQnjChVN6tq8-cPmE-t1ueXSiZQFA9KqtZATOzSHIvLLCbWnw5bIfDToeV6jr5Qy35IfkVCA01k_4mzXv4kkBkLcK2hz-kRwAIHAY7a878r0fyiW44cUwDadCH-8ChsKkxxq9HCCsx8iE7LL_BvB6kLLIUaGXGsGgBSBKmg4vqQwz_6yX2NSR1lPMJCPV9MysgRWT9OeoEvGB4j-c2vcl2r2QDNR6ZHW"/>
+<div class="absolute top-6 left-6">
+<span class="px-4 py-1.5 bg-secondary-container text-on-secondary-container rounded-full text-xs font-bold uppercase tracking-wider">Music</span>
+</div>
+</div>
+<h3 class="text-2xl font-serif mb-2">Resonancias de Cámara</h3>
+<p class="text-on-surface-variant font-body">Cuarteto de Cuerda Clásico</p>
+</div>
+<!-- Featured Card 4 -->
+<div class="md:col-span-8 group cursor-pointer">
+<div class="relative aspect-[16/9] overflow-hidden rounded-xl bg-surface-container-highest mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="grand opera production with many performers in opulent costumes on a large scale stage set" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtwCicAAWwzL_5hR9lnmxYjTgpxR5DtxPuhzjIxXTlrZcV7gKvs9gZfixMvBEGiTabJZu5gUKs0K-UAs2aItRmBNj_Q5gtNmvTxJXjtc4lnAxky9HfKATmyb_F8xrbMJKaqq9r1T0AWokrL1oFAoxegfpph-jkjFzV0ieIHe6kX6NKizqGDiWviATC_nKpnstOQ1heVyIjdcP_7zJ8T0XsSkWcmCIjUgzcmrPkpIF8DMnPAA5WW4E3X2d8d04-YOEnysnEaTQ1VGht"/>
+<div class="absolute top-6 left-6">
+<span class="px-4 py-1.5 bg-primary-container text-on-primary-container rounded-full text-xs font-bold uppercase tracking-wider">Theater</span>
+</div>
+</div>
+<h3 class="text-3xl font-serif mb-2">Crónica de un Sueño</h3>
+<p class="text-on-surface-variant font-body">Basado en la obra de G. García Márquez</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Upcoming Agenda Section -->
+<section class="py-24 bg-surface-container">
+<div class="max-w-4xl mx-auto px-8">
+<div class="text-center mb-16">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant mb-4 block">No te lo pierdas</span>
+<h2 class="text-5xl font-serif">Próxima Agenda</h2>
+</div>
+<div class="space-y-4">
+<!-- Event 1 -->
+<div class="group bg-surface-container-lowest p-6 rounded-lg flex flex-col md:flex-row items-center justify-between hover:shadow-xl transition-all duration-300">
+<div class="flex items-center gap-8 mb-4 md:mb-0 w-full md:w-auto">
+<div class="text-center border-r border-outline-variant pr-8">
+<span class="block text-3xl font-serif text-primary">12</span>
+<span class="block font-label text-xs uppercase tracking-widest text-on-surface-variant">OCT</span>
+</div>
+<div>
+<h4 class="text-xl font-bold font-body">Las Sombras de la Ilusión</h4>
+<div class="flex items-center text-on-surface-variant text-sm mt-1">
+<span class="material-symbols-outlined text-sm mr-1">location_on</span>
+                                    Teatre Municipal, Girona
+                                </div>
+</div>
+</div>
+<a class="w-full md:w-auto px-6 py-3 border border-primary text-primary rounded-lg font-body font-bold text-sm uppercase tracking-wider hover:bg-primary hover:text-white transition-colors text-center" href="#">
+                            Comprar Entradas
+                        </a>
+</div>
+<!-- Event 2 -->
+<div class="group bg-surface-container-lowest p-6 rounded-lg flex flex-col md:flex-row items-center justify-between hover:shadow-xl transition-all duration-300">
+<div class="flex items-center gap-8 mb-4 md:mb-0 w-full md:w-auto">
+<div class="text-center border-r border-outline-variant pr-8">
+<span class="block text-3xl font-serif text-secondary">15</span>
+<span class="block font-label text-xs uppercase tracking-widest text-on-surface-variant">OCT</span>
+</div>
+<div>
+<h4 class="text-xl font-bold font-body">Nocturno en Azul</h4>
+<div class="flex items-center text-on-surface-variant text-sm mt-1">
+<span class="material-symbols-outlined text-sm mr-1">location_on</span>
+                                    Auditori de Barcelona
+                                </div>
+</div>
+</div>
+<a class="w-full md:w-auto px-6 py-3 border border-secondary text-secondary rounded-lg font-body font-bold text-sm uppercase tracking-wider hover:bg-secondary hover:text-white transition-colors text-center" href="#">
+                            Comprar Entradas
+                        </a>
+</div>
+<!-- Event 3 - Replaced Dance Event -->
+<div class="group bg-surface-container-lowest p-6 rounded-lg flex flex-col md:flex-row items-center justify-between hover:shadow-xl transition-all duration-300">
+<div class="flex items-center gap-8 mb-4 md:mb-0 w-full md:w-auto">
+<div class="text-center border-r border-outline-variant pr-8">
+<span class="block text-3xl font-serif text-secondary">22</span>
+<span class="block font-label text-xs uppercase tracking-widest text-on-surface-variant">OCT</span>
+</div>
+<div>
+<h4 class="text-xl font-bold font-body">Resonancias de Cámara</h4>
+<div class="flex items-center text-on-surface-variant text-sm mt-1">
+<span class="material-symbols-outlined text-sm mr-1">location_on</span>
+                                    Auditori de Girona
+                                </div>
+</div>
+</div>
+<a class="w-full md:w-auto px-6 py-3 border border-secondary text-secondary rounded-lg font-body font-bold text-sm uppercase tracking-wider hover:bg-secondary hover:text-white transition-colors text-center" href="#">
+                            Comprar Entradas
+                        </a>
+</div>
+<!-- Event 4 -->
+<div class="group bg-surface-container-lowest p-6 rounded-lg flex flex-col md:flex-row items-center justify-between hover:shadow-xl transition-all duration-300">
+<div class="flex items-center gap-8 mb-4 md:mb-0 w-full md:w-auto">
+<div class="text-center border-r border-outline-variant pr-8">
+<span class="block text-3xl font-serif text-primary">02</span>
+<span class="block font-label text-xs uppercase tracking-widest text-on-surface-variant">NOV</span>
+</div>
+<div>
+<h4 class="text-xl font-bold font-body">Crónica de un Sueño</h4>
+<div class="flex items-center text-on-surface-variant text-sm mt-1">
+<span class="material-symbols-outlined text-sm mr-1">location_on</span>
+                                    Palau de la Música Catalana
+                                </div>
+</div>
+</div>
+<a class="w-full md:w-auto px-6 py-3 border border-primary text-primary rounded-lg font-body font-bold text-sm uppercase tracking-wider hover:bg-primary hover:text-white transition-colors text-center" href="#">
+                            Comprar Entradas
+                        </a>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="text-sm font-label uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center mx-auto">
+                        Cargar más fechas
+                        <span class="material-symbols-outlined ml-2 text-base">expand_more</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 bg-white" id="contact">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex flex-col md:flex-row items-center justify-between gap-16">
+<div class="flex-1">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-primary font-bold mb-4 block">Hablemos</span>
+<h2 class="text-5xl md:text-7xl font-serif mb-8 leading-tight">¿Tienes un proyecto que necesita <span class="italic">curaduría</span>?</h2>
+<p class="text-xl font-body text-on-surface-variant max-w-xl leading-relaxed">
+                            Estamos siempre en busca de nuevas voces y visiones artísticas que desafíen los límites del escenario. Si buscas colaboración o promoción, escríbenos.
+                        </p>
+</div>
+<div class="flex-shrink-0">
+<a class="text-3xl md:text-5xl font-serif italic border-b-2 border-primary pb-2 hover:text-primary transition-all duration-300" href="mailto:hello@thedigitalcurator.art">
+                            hello@thedigitalcurator.art
+                        </a>
+<div class="mt-12 space-y-2">
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Oficina Central</p>
+<p class="font-body text-lg">Carrer de l'Art, 12, Barcelona</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 bg-zinc-100 dark:bg-zinc-950">
+<div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 max-w-screen-2xl mx-auto">
+<div class="font-sans text-xs uppercase tracking-[0.05em] text-zinc-500 dark:text-zinc-400">
+                © 2025 Marta Dávila · Promotora de Artes Escénicas · Todos los derechos reservados
+            </div>
+<div class="flex gap-8">
+<a class="font-sans text-xs uppercase tracking-[0.05em] text-zinc-500 dark:text-zinc-400 hover:text-red-800 transition-colors opacity-80 hover:opacity-100" href="#contact">Contact</a>
+<a class="font-sans text-xs uppercase tracking-[0.05em] text-zinc-500 dark:text-zinc-400 hover:text-red-800 transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-sans text-xs uppercase tracking-[0.05em] text-zinc-500 dark:text-zinc-400 hover:text-red-800 transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-sans text-xs uppercase tracking-[0.05em] text-zinc-500 dark:text-zinc-400 hover:text-red-800 transition-colors opacity-80 hover:opacity-100" href="#">Legal</a>
+</div>
+</div>
+</footer>
+</body></html>

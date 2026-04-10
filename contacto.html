@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Marta Dávila — Promotora de Artes Escénicas</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#b4392c",
+                    "on-surface-variant": "#65655a",
+                    "on-background": "#38392f",
+                    "on-secondary-fixed": "#004558",
+                    "secondary-fixed-dim": "#a7dcf3",
+                    "on-tertiary-container": "#5a624a",
+                    "surface-tint": "#b4392c",
+                    "background": "#fffcf6",
+                    "secondary-fixed": "#b9eaff",
+                    "surface-bright": "#fffcf6",
+                    "tertiary-fixed-dim": "#e6efd0",
+                    "tertiary-dim": "#545b44",
+                    "inverse-on-surface": "#9e9d98",
+                    "on-error": "#ffffff",
+                    "primary-fixed": "#ffac9f",
+                    "surface": "#fffcf6",
+                    "surface-container": "#f6f4ea",
+                    "on-tertiary-fixed-variant": "#656d54",
+                    "on-tertiary-fixed": "#485039",
+                    "inverse-surface": "#0e0e0b",
+                    "inverse-primary": "#fd6e5c",
+                    "outline-variant": "#babaad",
+                    "on-secondary-fixed-variant": "#2b6275",
+                    "primary-fixed-dim": "#ff9788",
+                    "secondary": "#356b7f",
+                    "error": "#b3374e",
+                    "on-secondary-container": "#1f586b",
+                    "on-secondary": "#ffffff",
+                    "outline": "#818176",
+                    "on-primary": "#ffffff",
+                    "surface-variant": "#eae9db",
+                    "surface-container-high": "#f0eee3",
+                    "error-dim": "#770326",
+                    "surface-container-highest": "#eae9db",
+                    "on-surface": "#38392f",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#b9eaff",
+                    "surface-dim": "#e4e3d3",
+                    "primary-dim": "#a32d21",
+                    "tertiary-fixed": "#f5fdde",
+                    "on-primary-container": "#7b0e08",
+                    "error-container": "#f76a80",
+                    "surface-container-low": "#fcf9f1",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#68001f",
+                    "secondary-dim": "#275f72",
+                    "tertiary": "#60674f",
+                    "on-primary-fixed": "#580001",
+                    "on-primary-fixed-variant": "#881911",
+                    "primary-container": "#ffac9f",
+                    "tertiary-container": "#f5fdde"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        body { font-family: 'Manrope', sans-serif; background-color: #fffcf6; color: #38392f; }
+        .font-serif { font-family: 'Newsreader', serif; }
+        .glass-nav {
+            background: rgba(255, 252, 246, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #f6f4ea, #fffcf6);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 glass-nav shadow-[0_20px_40px_rgba(56,57,47,0.04)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-zinc-900 dark:text-zinc-50">Marta Dávila</div>
+<nav class="hidden md:flex items-center space-x-12">
+<a class="text-zinc-500 font-sans font-medium uppercase tracking-wider text-xs hover:text-red-700 transition-colors duration-300" href="#">About</a>
+<a class="text-zinc-500 font-sans font-medium uppercase tracking-wider text-xs hover:text-red-700 transition-colors duration-300" href="#">Productions</a>
+<a class="text-zinc-500 font-sans font-medium uppercase tracking-wider text-xs hover:text-red-700 transition-colors duration-300" href="#">News</a>
+<a class="text-red-800 relative after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-red-800 after:rounded-full font-sans font-medium uppercase tracking-wider text-xs" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-6">
+<span class="font-sans text-xs uppercase tracking-widest text-on-surface-variant font-bold">ES/CA</span>
+<button class="md:hidden">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-24">
+<!-- Hero Section: Editorial Header -->
+<section class="max-w-screen-2xl mx-auto px-8 mb-24">
+<div class="relative grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-7 z-10">
+<h1 class="text-7xl md:text-9xl font-serif italic leading-none tracking-tight text-on-surface mb-8">
+                        Get in <span class="text-primary">Touch</span>
+</h1>
+<p class="text-lg md:text-xl font-body text-on-surface-variant max-w-xl leading-relaxed">
+                        Whether you are an artist seeking representation or a patron of the arts with an inquiry, our curators are ready to weave your story into the next production.
+                    </p>
+</div>
+<div class="md:col-span-5 relative h-[400px] w-full overflow-hidden rounded-xl bg-surface-container-low shadow-sm">
+<img alt="Violinist in soft focus" class="w-full h-full object-cover grayscale-[20%] sepia-[10%] opacity-90" data-alt="close-up of a violinist playing in a dimly lit theater, warm stage lights catching the dust particles and the polished wood of the instrument" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBknfY9rLwpee71ssKbhM94miVX_g7rf0hIHo-MIKUw8HOauLVLaW8IrOwp2qfRsFb2flTAxPU3mDmvwjUufftGI500XwN6RF9z-Q-aSh3qV0_kH0D4A5ClljwCG4I7EA4P-CzdLTG-l-uonpb6Jnyoo3T21nmuUdsIIQM4O2lzHbxKZTID7VmMWqjm3zG2jf9XxTxG9TcB55aLq0-V1Qw0x1YdWVk-dE7nJLlqWzxrFZL7q7-Ar5wx7bhA9lobf6eJ2S01E8Djvwo0"/>
+</div>
+</div>
+</section>
+<!-- Main Content: Bento Layout -->
+<section class="max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Contact Information Column -->
+<div class="space-y-8 lg:col-span-1">
+<!-- Identity Card -->
+<div class="bg-surface-container-low p-10 rounded-xl space-y-12">
+<div>
+<h3 class="font-label text-xs uppercase tracking-[0.2em] text-primary font-bold mb-6">The Studio</h3>
+<p class="font-serif text-2xl italic leading-snug text-on-surface">
+                                Av. de les Arts, 42<br/>
+                                08001 Barcelona, Spain
+                            </p>
+</div>
+<div class="space-y-4">
+<h3 class="font-label text-xs uppercase tracking-[0.2em] text-primary font-bold mb-2">Connect</h3>
+<a class="block font-body text-lg hover:text-primary transition-colors" href="mailto:curator@digital-curator.art">curator@digital-curator.art</a>
+<a class="block font-body text-lg hover:text-primary transition-colors" href="tel:+34934123456">+34 934 123 456</a>
+</div>
+<div class="pt-8 flex gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="movie_filter">movie_filter</span>
+</a>
+</div>
+</div>
+<!-- Map Placeholder / Image -->
+<div class="relative h-64 w-full rounded-xl overflow-hidden bg-surface-container-low group">
+<img alt="Minimalist Map of Barcelona" class="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-110" data-alt="a minimalist monochromatic map of Barcelona city center with elegant typography and clean white and grey aesthetic" data-location="Barcelona" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSzJMcCrJVqRBZ8StIZwVnlTCpus2wfSwYNAus8LY8LnI8gQR1_ufV7ex55GdrkLBAbJPkf79VC5_t002OOGyUHYTB0K26CH7GJkLQ5R9n8KVezxnF85kfohKAeR-rrA_wI6_8_G-FcNdZfp5VIRddtwisPAKHyVIhCMyV-pwndmuBfE3RJUWf6bwsLOQpzbq7vDmcXqJwiQJMzhdflqfwNBS1QPlCDGxoZgB8tnbLangXtQh8YlcD_jGAJY-XPOGY3Ko93iwn5nMw"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-primary p-3 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-white" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact Form Column -->
+<div class="lg:col-span-2 bg-surface-container-lowest p-8 md:p-16 rounded-xl shadow-[0_20px_40px_rgba(56,57,47,0.04)]">
+<form class="space-y-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-outline mb-2 block" for="name">Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-3 focus:ring-0 focus:border-primary font-serif italic text-xl px-0 placeholder:text-surface-variant" id="name" placeholder="Juan Pérez" type="text"/>
+</div>
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-outline mb-2 block" for="email">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-3 focus:ring-0 focus:border-primary font-serif italic text-xl px-0 placeholder:text-surface-variant" id="email" placeholder="hello@curator.art" type="email"/>
+</div>
+</div>
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-outline mb-2 block" for="subject">Inquiry Type</label>
+<select class="w-auto bg-transparent border-0 border-b border-outline-variant py-3 focus:ring-0 focus:border-primary font-body text-sm px-0 appearance-none pr-8" id="subject">
+<option>Press &amp; Media</option>
+<option>Artist Submission</option>
+<option>General Inquiry</option>
+<option>Sponsorship</option>
+</select>
+</div>
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-outline mb-2 block" for="message">Your Message</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant py-3 focus:ring-0 focus:border-primary font-body text-lg px-0 placeholder:text-surface-variant resize-none" id="message" placeholder="How can we help bring your vision to life?" rows="4"></textarea>
+</div>
+<div class="pt-6">
+<button class="group relative overflow-hidden bg-primary text-on-primary px-10 py-5 rounded-md font-label text-xs uppercase tracking-[0.2em] font-bold flex items-center gap-4 transition-transform hover:scale-102" type="submit">
+                                Send Inquiry
+                                <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-2" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Aesthetic Pull Quote -->
+<section class="max-w-screen-2xl mx-auto px-8 mt-32">
+<div class="border-t border-outline-variant/20 pt-16 flex flex-col md:flex-row items-center justify-between gap-12">
+<h2 class="font-serif italic text-4xl md:text-5xl text-on-surface-variant max-w-2xl leading-tight">
+                    "Art is the signature of civilization."
+                </h2>
+<div class="flex gap-2 items-center">
+<span class="w-12 h-[1px] bg-primary"></span>
+<span class="font-label text-xs uppercase tracking-widest font-bold">Marta Dávila Philosophy</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 bg-zinc-100 dark:bg-zinc-950">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+<div class="font-sans text-xs uppercase tracking-[0.05em] text-zinc-500 dark:text-zinc-400">
+                © 2025 Marta Dávila · Promotora de Artes Escénicas · Todos los derechos reservados
+            </div>
+<div class="flex gap-8">
+<a class="font-sans text-xs uppercase tracking-[0.05em] text-zinc-500 dark:text-zinc-400 hover:text-red-800 transition-colors" href="#">Contact</a>
+<a class="font-sans text-xs uppercase tracking-[0.05em] text-zinc-500 dark:text-zinc-400 hover:text-red-800 transition-colors" href="#">Privacy Policy</a>
+<a class="font-sans text-xs uppercase tracking-[0.05em] text-zinc-500 dark:text-zinc-400 hover:text-red-800 transition-colors" href="#">Terms of Service</a>
+<a class="font-sans text-xs uppercase tracking-[0.05em] text-zinc-500 dark:text-zinc-400 hover:text-red-800 transition-colors" href="#">Legal</a>
+</div>
+</div>
+</footer>
+</body></html>
